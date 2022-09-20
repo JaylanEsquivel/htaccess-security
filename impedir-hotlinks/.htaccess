@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{HTTP_REFERER} !^$ 
+RewriteCond %{HTTP_REFERER} !^http://(www.)?yourdomain.com/.*$ [NC] 
+RewriteRule .(jpeg|JPEG|jpe|JPE|jpg|JPG |gif|GIF|png|PNG)$ https://www.seudominio.com/no-hotlinking.png [R,L]

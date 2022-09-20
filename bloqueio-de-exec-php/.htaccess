@@ -1,0 +1,9 @@
+<FilesMatch  "\.(?i:php)$" >
+ <IfModule ! mod_authz_core . c >
+ Ordem permitir, negar
+Negar de todos
+</IfModule>
+ <IfModule  mod_authz_core . c >
+ Exigir todos negados
+ </IfModule>
+ </FilesMatch>  
